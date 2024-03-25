@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "nombre": "Aquario",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_waterbearer.png",
+    "materialSkill": "level/ma_swordman_es.png",
+    "materialAwakening": "level/ma_shield_es.png",
+    "materialMax": "level/ma_insignia_es.png"
+
+  },
+  {
+    "id": 2,
+    "nombre": "Aries",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_ram.png",
+    "materialSkill": "level/ma_meca_es.png",
+    "materialAwakening": "level/ma_nature_es.png",
+    "materialMax": "level/ma_dreamerk_es.png"
+
+  },
+  {
+    "id": 3,
+    "nombre": "Cancer",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_crab.png",
+    "materialSkill": "level/ma_rodent_es.png",
+    "materialAwakening": "level/ma_siren_es.png",
+    "materialMax": "level/ma_mecagolem_es.png"
+
+  },
+  {
+    "id": 4,
+    "nombre": "Capricornio",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_goat.png",
+    "materialSkill": "level/ma_slime_es.png",
+    "materialAwakening": "level/ma_candle_es.png",
+    "materialMax": "level/ma_wyvern_es.png"
+
+  },
+  {
+    "id": 5,
+    "nombre": "Geminis",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_twins.png",
+    "materialSkill": "level/ma_taranor_es.png",
+    "materialAwakening": "level/ma_magician_es.png",
+    "materialMax": "level/ma_chimaera_es.png"
+
+  },
+  {
+    "id": 6,
+    "nombre": "Leo",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_lion.png",
+    "materialSkill": "level/ma_demon_es.png",
+    "materialAwakening": "level/ma_wolf_es.png",
+    "materialMax": "level/ma_queen_es.png"
+
+  },
+  {
+    "id": 7,
+    "nombre": "Libra",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_scales.png",
+    "materialSkill": "level/ma_gem_es.png",
+    "materialAwakening": "level/ma_dreamer_es.png",
+    "materialMax": "level/ma_raingar_es.png"
+
+  },
+  {
+    "id": 8,
+    "nombre": "Piscis",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_fish.png",
+    "materialSkill": "level/ma_imp_es.png",
+    "materialAwakening": "level/ma_bone_es.png",
+    "materialMax": "level/ma_golem_es.png"
+
+  },
+  {
+    "id": 9,
+    "nombre": "Sagitario",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_archer.png",
+    "materialSkill": "level/ma_bowman_es.png",
+    "materialAwakening": "level/ma_demonr_es.png",
+    "materialMax": "level/ma_hired_es.png"
+
+  },
+  {
+    "id": 10,
+    "nombre": "Escorpio",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_scorpion.png",
+    "materialSkill": "level/ma_spearman_es.png",
+    "materialAwakening": "level/ma_carapace_es.png",
+    "materialMax": "level/ma_powder_es.png"
+  },
+  {
+    "id": 11,
+    "nombre": "Tauro",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_bull.png",
+    "materialSkill": "level/ma_penguin_es.png",
+    "materialAwakening": "level/ma_hatchling_es.png",
+    "materialMax": "level/ma_demont_es.png"
+
+  },
+  {
+    "id": 12,
+    "nombre": "Virgo",
+    "imgHoroscopo": "horoscopo/cm_icon_zodiac_maiden.png",
+    "materialSkill": "level/ma_banshee_es.png",
+    "materialAwakening": "level/ma_entree_es.png",
+    "materialMax": "level/ma_angraf_es.png"
+
+  }
+]

@@ -1,0 +1,152 @@
+{
+  "5": [
+    {
+      "id": 1,
+      "gemaslv1": 10,
+      "gemaslv2": 0,
+      "gemaslv3": 0,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 2,
+      "gemaslv1": 15,
+      "gemaslv2": 2,
+      "gemaslv3": 0,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 3,
+      "gemaslv1": 20,
+      "gemaslv2": 10,
+      "gemaslv3": 0,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 4,
+      "gemaslv1": 0,
+      "gemaslv2": 10,
+      "gemaslv3": 2,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 5,
+      "gemaslv1": 0,
+      "gemaslv2": 0,
+      "gemaslv3": 6,
+      "awakening": 15,
+      "matMax": 0
+    },
+    {
+      "id": 6,
+      "gemaslv1": 0,
+      "gemaslv2": 0,
+      "gemaslv3": 10,
+      "awakening": 0,
+      "matMax": 10
+    }
+  ],
+  "4": [
+    {
+      "id": 1,
+      "gemaslv1": 8,
+      "gemaslv2": 0,
+      "gemaslv3": 0,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 2,
+      "gemaslv1": 12,
+      "gemaslv2": 2,
+      "gemaslv3": 0,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 3,
+      "gemaslv1": 17,
+      "gemaslv2": 8,
+      "gemaslv3": 0,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 4,
+      "gemaslv1": 0,
+      "gemaslv2": 8,
+      "gemaslv3": 1,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 5,
+      "gemaslv1": 0,
+      "gemaslv2": 0,
+      "gemaslv3": 5,
+      "awakening": 12,
+      "matMax": 0
+    },
+    {
+      "id": 6,
+      "gemaslv1": 0,
+      "gemaslv2": 0,
+      "gemaslv3": 8,
+      "awakening": 0,
+      "matMax": 8
+    }
+  ],
+  "3": [
+    {
+      "id": 1,
+      "gemaslv1": 5,
+      "gemaslv2": 0,
+      "gemaslv3": 0,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 2,
+      "gemaslv1": 9,
+      "gemaslv2": 0,
+      "gemaslv3": 0,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 3,
+      "gemaslv1": 12,
+      "gemaslv2": 6,
+      "gemaslv3": 0,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 4,
+      "gemaslv1": 0,
+      "gemaslv2": 15,
+      "gemaslv3": 0,
+      "awakening": 0,
+      "matMax": 0
+    },
+    {
+      "id": 5,
+      "gemaslv1": 0,
+      "gemaslv2": 0,
+      "gemaslv3": 4,
+      "awakening": 9,
+      "matMax": 0
+    },
+    {
+      "id": 6,
+      "gemaslv1": 0,
+      "gemaslv2": 0,
+      "gemaslv3": 6,
+      "awakening": 0,
+      "matMax": 6
+    }
+  ]
+}
