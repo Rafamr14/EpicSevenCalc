@@ -1,0 +1,212 @@
+{
+  "1": [
+    {
+      "lv": 1,
+      "molagora": 3,
+      "materialSkill": 8,
+      "materialMax": 0,
+      "oro": 52000
+    }
+  ],
+  "2": [
+    {
+      "lv": 1,
+      "molagora": 1,
+      "materialSkill": 3,
+      "materialMax": 0,
+      "oro": 19000
+    },
+    {
+      "lv": 2,
+      "molagora": 2,
+      "materialSkill": 0,
+      "materialMax": 1,
+      "oro": 38000
+    }
+  ],
+  "3": [
+    {
+      "lv": 1,
+      "molagora": 1,
+      "materialSkill": 3,
+      "materialMax": 0,
+      "oro": 19000
+    },
+    {
+      "lv": 2,
+      "molagora": 2,
+      "materialSkill": 5,
+      "materialMax": 0,
+      "oro": 33000
+    },
+    {
+      "lv": 3,
+      "molagora": 4,
+      "materialSkill": 0,
+      "materialMax": 3,
+      "oro": 110000
+    }
+  ],
+  "4": [
+    {
+      "lv": 1,
+      "molagora": 1,
+      "materialSkill": 0,
+      "materialMax": 0,
+      "oro": 4000
+    },
+    {
+      "lv": 2,
+      "molagora": 1,
+      "materialSkill": 3,
+      "materialMax": 0,
+      "oro": 19000
+    },
+    {
+      "lv": 3,
+      "molagora": 3,
+      "materialSkill": 5,
+      "materialMax": 0,
+      "oro": 37000
+    },
+    {
+      "lv": 4,
+      "molagora": 4,
+      "materialSkill": 0,
+      "materialMax": 2,
+      "oro": 80000
+    }
+  ],
+  "5": [
+    {
+      "lv": 1,
+      "molagora": 1,
+      "materialSkill": 0,
+      "materialMax": 0,
+      "oro": 4000
+    },
+    {
+      "lv": 2,
+      "molagora": 1,
+      "materialSkill": 0,
+      "materialMax": 0,
+      "oro": 4000
+    },
+    {
+      "lv": 3,
+      "molagora": 1,
+      "materialSkill": 5,
+      "materialMax": 0,
+      "oro": 29000
+    },
+    {
+      "lv": 4,
+      "molagora": 3,
+      "materialSkill": 7,
+      "materialMax": 0,
+      "oro": 47000
+    },
+    {
+      "lv": 5,
+      "molagora": 5,
+      "materialSkill": 0,
+      "materialMax": 2,
+      "oro": 80000
+    }
+  ],
+  "6": [
+    {
+      "lv": 1,
+      "molagora": 1,
+      "materialSkill": 0,
+      "materialMax": 0,
+      "oro": 4000
+    },
+    {
+      "lv": 2,
+      "molagora": 1,
+      "materialSkill": 0,
+      "materialMax": 0,
+      "oro": 4000
+    },
+    {
+      "lv": 3,
+      "molagora": 1,
+      "materialSkill": 2,
+      "materialMax": 0,
+      "oro": 14000
+    },
+    {
+      "lv": 4,
+      "molagora": 2,
+      "materialSkill": 4,
+      "materialMax": 0,
+      "oro": 28000
+    },
+    {
+      "lv": 5,
+      "molagora": 4,
+      "materialSkill": 5,
+      "materialMax": 0,
+      "oro": 45000
+    },
+    {
+      "lv": 6,
+      "molagora": 4,
+      "materialSkill": 0,
+      "materialMax": 2,
+      "oro": 80000
+    }
+  ],
+  "7": [
+    {
+      "lv": 1,
+      "molagora": 1,
+      "materialSkill": 0,
+      "materialMax": 0,
+      "oro": 4000
+    },
+    {
+      "lv": 2,
+      "molagora": 1,
+      "materialSkill": 0,
+      "materialMax": 0,
+      "oro": 4000
+    },
+    {
+      "lv": 3,
+      "molagora": 1,
+      "materialSkill": 0,
+      "materialMax": 0,
+      "oro": 4000
+    },
+    {
+      "lv": 4,
+      "molagora": 1,
+      "materialSkill": 3,
+      "materialMax": 0,
+      "oro": 19000
+    },
+    {
+      "lv": 5,
+      "molagora": 3,
+      "materialSkill": 4,
+      "materialMax": 0,
+      "oro": 32000
+    },
+    {
+      "lv": 6,
+      "molagora": 3,
+      "materialSkill": 7,
+      "materialMax": 0,
+      "oro": 55000
+    },
+    {
+      "lv": 7,
+      "molagora": 4,
+      "materialSkill": 0,
+      "materialMax": 3,
+      "oro": 110000
+    }
+  ]
+}
