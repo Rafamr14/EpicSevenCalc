@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     fetch('horoscopo.json')
                         .then(response => response.json())
                         .then(horoscopo => {
-                            const horoscopoSeleccionado = horoscopo.find(h => h.id === personajeSeleccionado.horoscopo);
+                            const horoscopoSeleccionado = horoscopo.find(h => h.nombre === personajeSeleccionado.horoscopo);
                             if (horoscopoSeleccionado) {
                                 imgHoroscopo.src = horoscopoSeleccionado.imgHoroscopo;
                                 imgMatMax.src = horoscopoSeleccionado.materialMax;
@@ -374,4 +374,6 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(error => console.error('Error al cargar los datos de awakening:', error));
     }
+
+
 });

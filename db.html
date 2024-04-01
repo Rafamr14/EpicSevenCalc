@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./estilos.css" rel="stylesheet" >
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Epic Seven Calculator</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Aquí puedes agregar más elementos a tu navbar si lo necesitas -->
+        </div>
+    </div>
+</nav>
+<div class="sidebar">
+    <a class="heroesBarraLateral" id="activa" href="./db.html">
+        <img src="ui/icon_menu_hero.png" alt="">
+
+
+    </a>
+    <img class="marcadorActivoDB" id="marcadorActivo" style="display: block;" src="ui/_tap_select_blue.png" alt="">
+    <a class="calculadoraBarraLateral" href="./index.html">
+        <img src="ui/icon_menu_eqmade.png" alt="">
+    </a>
+</div>
+<div class="main-content">
+    <div class="contenedor-imagenes">
+        <!-- Imagen de fondo -->
+        <img src="img/base_unit_blue.png" class="img-fluid imagen-fondo">
+
+        <!-- Primera imagen superpuesta -->
+        <div id="personaje">
+            <img src="" class="img-fluid imagen-fondo pjGearScreen" id="imagen-zoom" style="transition: transform 0.25s ease; transform-origin: top left;">
+        </div>
+        <div id="nombre">
+            <div class="row img-fluid elemento">
+                <div class="col-4">
+                    <img  src="img/cm_icon_prowind.png" alt="">
+                </div>
+                <div class="col-4">
+                    <p style="font-weight: bold; color: white">Tierra</p>
+                </div>
+            </div>
+            <div class="row img-fluid clase">
+                <div class="col-4">
+                    <img style="width: 34px;" src="clase/cm_icon_role_assassin_b.png" alt="">
+                </div>
+                <div class="col-4">
+                    <p style="font-weight: bold; color: white">Furari</p>
+                </div>
+            </div>
+            <div class="row img-fluid horoscopo">
+                <div class="col-4">
+                    <img style="width: 34px;" src="horoscopo/cm_icon_zodiac_scales.png" alt="">
+                </div>
+                <div class="col-4">
+                    <p style="font-weight: bold; color: white">Furari</p>
+                </div>
+            </div>
+            <div>
+                <h1 style="font-weight: bold; color: white" class="nombre">Lilias noche de gala</h1>
+            </div>
+        </div>
+        <div id="imagenesNumeros" class="row">
+            <div class="col-4" id="imgLV">
+                <img src="ui/hero_lv_artiskill.png" alt="">
+            </div>
+            <div class="col-4" >
+                <div class="row" id="imgNivel">
+
+                </div>
+            </div>
+            <div class="col-4" id="imgBarraNivel"></div>
+            <div class="col-4" id="imgAscension"></div>
+        </div>
+        <div id="artefacto">
+            <img src="ui/cm_item_slot_arti.png" class="img-fluid  artefactoGearScreen">
+        </div>
+        <div id="gear">
+            <img src="ui/cm_item_slot_0.png" class="img-fluid  gearEspadaGearScreen">
+            <img src="ui/cm_item_slot_0.png" class="img-fluid  gearCascoGearScreen">
+            <img src="ui/cm_item_slot_0.png" class="img-fluid  gearPecheraGearScreen">
+            <img src="ui/cm_item_slot_0.png" class="img-fluid  gearCollarGearScreen">
+            <img src="ui/cm_item_slot_0.png" class="img-fluid  gearAnilloGearScreen">
+            <img src="ui/cm_item_slot_0.png" class="img-fluid  gearBotasGearScreen">
+        </div>
+    </div>
+    <div id="configurador">
+        <input type="text" id="nivel">
+        <select class="form-select" id="seleccion-personaje">
+            <option>Elige un personaje</option>
+        </select>
+        <input type="range" id="slider-zoom" min="1" max="3" step="0.01" value="1">
+    </div>
+
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const marcadorAzul = document.getElementById('marcadorActivo');
+        const webActiva = document.getElementById('activa')
+        if (!webActiva) {
+            document.getElementById("marcadorActivo").style.display = "none";
+        }
+
+        const numeroInput = document.getElementById('nivel');
+        const imagenesNumeros = document.getElementById('imgNivel');
+
+        numeroInput.addEventListener('input', () => {
+            // Limpiar el contenedor de imágenes
+            imagenesNumeros.innerHTML = '';
+
+            // Obtén el valor del campo de entrada
+            const valor = numeroInput.value;
+
+            // Recorre cada carácter del valor del campo de entrada
+            for (let i = 0; i < valor.length; i++) {
+                const char = valor[i];
+
+                // Verifica si el carácter es un número
+                if (!isNaN(char)) {
+                    // Crea una nueva imagen para cada número
+                    const img = document.createElement('img');
+                    // Ruta a la imagen, necesita ser ajustada a tu configuración
+                    img.src = `ui/hero_lv_${char}.png`;
+                    img.alt = `Número ${char}`;
+
+                    // Añade la imagen al contenedor de imágenes
+                    imagenesNumeros.appendChild(img);
+                }
+            }
+        })
+        var selectPersonaje = document.getElementById('seleccion-personaje');
+        var imgPersonaje = document.getElementById('personaje').getElementsByTagName('img')[0];
+        var personajesData;
+
+        // Cargar y procesar el JSON
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                personajesData = data.sort((a, b) => a.nombre.localeCompare(b.nombre)); // Ordena alfabéticamente por nombre
+                data.forEach((personaje, index) => {
+                    let option = new Option(personaje.nombre, index); // Usar el índice como valor
+                    selectPersonaje.add(option);
+                });
+            })
+            .catch(error => console.error('Error al cargar los datos:', error));
+
+        // Manejar el cambio de selección
+        selectPersonaje.addEventListener('change', function() {
+            var seleccionadoIndex = this.value;
+            var personajeSeleccionado = personajesData[seleccionadoIndex];
+
+            if(personajeSeleccionado && personajeSeleccionado.splash) {
+                imgPersonaje.src = personajeSeleccionado.splash;
+            } else {
+                console.log("No se encontró la imagen para el personaje seleccionado.");
+            }
+        });
+        var slider = document.getElementById('slider-zoom');
+        var imagen = document.getElementById('imagen-zoom');
+
+        // Función para ajustar el zoom de la imagen
+        function adjustZoom() {
+            var scaleValue = slider.value;
+            imagen.style.transform = 'scale(' + scaleValue + ')';
+        }
+
+        // Añade el evento de input al slider para cambiar el zoom
+        slider.addEventListener('input', adjustZoom);
+
+    })
+
+
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

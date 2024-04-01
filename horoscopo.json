@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "nombre": "Aquario",
+    "nombre": "Acuario",
     "imgHoroscopo": "horoscopo/cm_icon_zodiac_waterbearer.png",
     "materialSkill": "level/ma_swordman_es.png",
     "materialAwakening": "level/ma_shield_es.png",

@@ -1,0 +1,223 @@
+.contenedor-imagenes {
+    position: relative;
+    width: 100%;
+    max-width: 1280px; /* Ajusta este valor según el tamaño deseado del contenedor */
+    height: 720px; /* Ajusta este valor según el tamaño deseado del contenedor */
+    overflow: hidden;
+}
+#personaje img {
+    width: 100%; /* Ajusta el ancho al del contenedor */
+    max-width: 400px; /* O el tamaño máximo que desees */
+    max-height: 600px; /* O el tamaño máximo de altura que desees */
+    object-fit: contain;
+}
+.imagen-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Esto hace que la imagen cubra completamente el contenedor */
+    height: 100%; /* Esto hace que la imagen cubra completamente el contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+/* Ajusta el top y left para posicionar las imágenes superiores como desees */
+.pjGearScreen {
+    position: absolute; /* Esto es necesario para usar top/left y transform */
+    width: 100%;
+    z-index: 1; /* Asegura que esta imagen se muestre por encima de la imagen de fondo */
+    left: 50%; /* Mueve el lado izquierdo de la imagen al centro del contenedor */
+    transform: translateX(-50%); /* Desplaza la imagen hacia atrás a la mitad de su propio ancho */
+    top: 50px; /* Ajusta esto según necesites para posicionar verticalmente */
+}
+.barraLateralGearScreen {
+    position: absolute; /* Esto es necesario para usar top/left y transform */
+    width: 10%;
+    z-index: 1; /* Asegura que esta imagen se muestre por encima de la imagen de fondo */
+    left: 0; /* Mueve el lado izquierdo de la imagen al centro del contenedor */
+    /* Desplaza la imagen hacia atrás a la mitad de su propio ancho */
+    top: 0; /* Ajusta esto según necesites para posicionar verticalmente */
+}
+.artefactoGearScreen {
+    position: absolute; /* Esto es necesario para usar top/left y transform */
+    width: 10%;
+    z-index: 1; /* Asegura que esta imagen se muestre por encima de la imagen de fondo */
+    left: 70%; /* Mueve el lado izquierdo de la imagen al centro del contenedor */
+    transform: translateX(-50%); /* Desplaza la imagen hacia atrás a la mitad de su propio ancho */
+    top: 100px; /* Ajusta esto según necesites para posicionar verticalmente */
+}
+.gearEspadaGearScreen {
+    position: absolute; /* Esto es necesario para usar top/left y transform */
+    width: 8.5%;
+    z-index: 1; /* Asegura que esta imagen se muestre por encima de la imagen de fondo */
+    left: 33.5%; /* Mueve el lado izquierdo de la imagen al centro del contenedor */
+    transform: translateX(-50%); /* Desplaza la imagen hacia atrás a la mitad de su propio ancho */
+    top: 270px; /* Ajusta esto según necesites para posicionar verticalmente */
+}
+.gearCascoGearScreen {
+    position: absolute; /* Esto es necesario para usar top/left y transform */
+    width: 8.5%;
+    z-index: 1; /* Asegura que esta imagen se muestre por encima de la imagen de fondo */
+    left: 33.5%; /* Mueve el lado izquierdo de la imagen al centro del contenedor */
+    transform: translateX(-50%); /* Desplaza la imagen hacia atrás a la mitad de su propio ancho */
+    top: 390px; /* Ajusta esto según necesites para posicionar verticalmente */
+}
+.gearPecheraGearScreen {
+    position: absolute; /* Esto es necesario para usar top/left y transform */
+    width: 8.5%;
+    z-index: 1; /* Asegura que esta imagen se muestre por encima de la imagen de fondo */
+    left: 33.5%; /* Mueve el lado izquierdo de la imagen al centro del contenedor */
+    transform: translateX(-50%); /* Desplaza la imagen hacia atrás a la mitad de su propio ancho */
+    top: 510px; /* Ajusta esto según necesites para posicionar verticalmente */
+}
+.gearCollarGearScreen {
+    position: absolute; /* Esto es necesario para usar top/left y transform */
+    width: 8.5%;
+    z-index: 1; /* Asegura que esta imagen se muestre por encima de la imagen de fondo */
+    left: 70%; /* Mueve el lado izquierdo de la imagen al centro del contenedor */
+    transform: translateX(-50%); /* Desplaza la imagen hacia atrás a la mitad de su propio ancho */
+    top: 270px; /* Ajusta esto según necesites para posicionar verticalmente */
+}
+.gearAnilloGearScreen {
+    position: absolute; /* Esto es necesario para usar top/left y transform */
+    width: 8.5%;
+    z-index: 1; /* Asegura que esta imagen se muestre por encima de la imagen de fondo */
+    left: 70%; /* Mueve el lado izquierdo de la imagen al centro del contenedor */
+    transform: translateX(-50%); /* Desplaza la imagen hacia atrás a la mitad de su propio ancho */
+    top: 390px; /* Ajusta esto según necesites para posicionar verticalmente */
+}
+.gearBotasGearScreen {
+    position: absolute; /* Esto es necesario para usar top/left y transform */
+    width: 8.5%;
+    z-index: 1; /* Asegura que esta imagen se muestre por encima de la imagen de fondo */
+    left: 70%; /* Mueve el lado izquierdo de la imagen al centro del contenedor */
+    transform: translateX(-50%); /* Desplaza la imagen hacia atrás a la mitad de su propio ancho */
+    top: 510px; /* Ajusta esto según necesites para posicionar verticalmente */
+}
+
+.superpuesta-2 {
+    top: 100px;
+    left: 100px;
+    z-index: 2; /* Asegura que esta imagen se muestre por encima de la otra imagen superpuesta */
+}
+body {
+    padding-top: 56px; /* Espacio para la navbar fija */
+}
+.contenedor-imagenes {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    height: 720px;
+    overflow: hidden;
+
+}
+.sidebar {
+    height: 100%;
+    width: 250px; /* Ancho de la sidebar */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url('ui/barra_lateral.png'); /* Usa la imagen como fondo */
+    background-size: cover; /* Asegúrate de que la imagen cubra toda la barra lateral */
+    background-repeat: no-repeat; /* No repetir la imagen si no cubre todo el espacio */
+    overflow-x: hidden; /* Ocultar scrollbar horizontal */
+    padding-top: 20px;
+}
+
+/* Estilos para los ítems de la sidebar */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+/* Ajustar contenido al moverse la sidebar */
+.main-content {
+    margin-left: 250px; /* Igual al ancho de la sidebar */
+    padding: 0px 10px;
+}
+.heroesBarraLateral {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    z-index: 1;
+}
+.calculadoraBarraLateral {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+
+.marcadorActivoDB {
+    display: block; /* o `inline-block`, dependiendo de tu layout */
+    /* Ruta de tu imagen indicadora */
+    background: url('ui/_tap_select_blue.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 4%;
+}
+.marcadorActivoCalc {
+    display: block; /* o `inline-block`, dependiendo de tu layout */
+    /* Ruta de tu imagen indicadora */
+    background: url('ui/_tap_select_blue.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 14%;
+}
+.elemento {
+    position: absolute;
+    left: 8%;
+    top: 5%;
+    z-index: 1;
+}
+.clase {
+    position: absolute;
+    left: 16%;
+    top: 5%;
+    z-index: 1;
+}
+.horoscopo {
+    position: absolute;
+    left: 24%;
+    top: 5%;
+    z-index: 1;
+}
+.nombre {
+    position: absolute;
+    left: 8%;
+    top: 10%;
+    z-index: 1;
+}
+#imagenesNumeros{
+    position: absolute;
+    left: 8%;
+    top: 20%;
+    z-index: 1;
+}
+#personaje {
+    width: 100%; /* o un valor fijo como 800px */
+    height: 600px; /* o el alto deseado */
+    position: relative;
+}
+
+#imagen-zoom {
+    max-width: none;
+    width: auto;
+    height: auto;
+    cursor: grab; /* Cambia el cursor para indicar que la imagen se puede mover */
+}
+
+#slider-zoom {
+    position: absolute;
+    width: 80%;
+    bottom: 10px;
+    left: 10%;
+    z-index: 10;
+}
