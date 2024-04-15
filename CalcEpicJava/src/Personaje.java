@@ -1,5 +1,6 @@
 public class Personaje {
     private String horoscopoNombre;
+    private String id;
     private String nombre;
     private String clase;
     private int rareza;
@@ -10,15 +11,17 @@ public class Personaje {
     private int nivelesS1;
     private int nivelesS2;
     private int nivelesS3;
+    private String imgFace;
     private String imgS1;
     private String imgS2;
     private String imgS3;
 
     // Constructor
-    public Personaje(String nombre, String clase, int rareza, String elemento,
+    public Personaje(String id, String nombre, String clase, int rareza, String elemento,
                      String horoscopo, boolean tieneExclusiveEquipment,
                      boolean tieneStigma, int nivelesS1, int nivelesS2, int nivelesS3,
-                     String imgS1, String imgS2, String imgS3) {
+                     String imgFace, String imgS1, String imgS2, String imgS3) {
+        this.id = id;
         this.nombre = nombre;
         this.clase = clase;
         this.rareza = rareza;
@@ -29,12 +32,15 @@ public class Personaje {
         this.nivelesS1 = nivelesS1;
         this.nivelesS2 = nivelesS2;
         this.nivelesS3 = nivelesS3;
+        this.imgFace = imgFace;
         this.imgS1 = imgS1;
         this.imgS2 = imgS2;
         this.imgS3 = imgS3;
     }
 
     // Getters y Setters
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
 
@@ -65,6 +71,8 @@ public class Personaje {
     public int getNivelesS3() { return nivelesS3; }
     public void setNivelesS3(int nivelesS3) { this.nivelesS3 = nivelesS3; }
 
+    public String getImgFace() { return imgFace; }
+    public void setImgFace(String imgFace) { this.imgFace = imgFace; }
     public String getImgS1() { return imgS1; }
     public void setImgS1(String imgS1) { this.imgS1 = imgS1; }
 

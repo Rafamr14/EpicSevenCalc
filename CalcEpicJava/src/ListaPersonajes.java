@@ -8,6 +8,7 @@ public class ListaPersonajes {
 
         // Aquí añades todos tus personajes
         personajes.add(new Personaje(
+                "c1144",
                 "Abigail",
                 "Luctor",
                 5,
@@ -18,11 +19,13 @@ public class ListaPersonajes {
                 7,
                 1,
                 7,
+                "/pj/c1144_s.png",
                 "/skills/sk_c1144_1.png",
                 "/skills/sk_c1144_2.png",
                 "/skills/sk_c1144_3.png"
         ));
         personajes.add(new Personaje(
+                "c2016",
                 "Yufine Abismal",
                 "Custodes",
                 5,
@@ -33,6 +36,7 @@ public class ListaPersonajes {
                 6,
                 3,
                 6,
+                "/pj/c2016_s.png",
                 "/skills/sk_c2016_1.png",
                 "/skills/sk_c2016_2.png",
                 "/skills/sk_c2016_3.png"

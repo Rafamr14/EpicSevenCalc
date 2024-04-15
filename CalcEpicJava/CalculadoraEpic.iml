@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/img" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/level" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pj" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/skills" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/splash" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/ui" type="java-resource" />
