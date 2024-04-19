@@ -32,6 +32,7 @@ public class MaterialCalculator extends JFrame {
     private JLabel imgMatMax;
     private JLabel imgOro;
     private JLabel imgPj;
+    private JLabel imgClase;
     private JPanel mainPanel;
 
     private JComboBox<Personaje> characterComboBox;
@@ -72,9 +73,9 @@ public class MaterialCalculator extends JFrame {
         s3LevelInitial = new JComboBox<>();
 
         // Establece ubicaciones y tamaños, ajusta según tus necesidades
-        s1LevelInitial.setBounds(10, 135, 80, 25);
-        s2LevelInitial.setBounds(100, 135, 80, 25);
-        s3LevelInitial.setBounds(190, 135, 80, 25);
+        s1LevelInitial.setBounds(10, 185, 80, 25);
+        s2LevelInitial.setBounds(100, 185, 80, 25);
+        s3LevelInitial.setBounds(190, 185, 80, 25);
 
         mainPanel.add(s1LevelInitial);
         mainPanel.add(s2LevelInitial);
@@ -86,73 +87,77 @@ public class MaterialCalculator extends JFrame {
         loadPersonajes();
 
         imgiconPj = new JLabel();
-        imgiconPj.setBounds(10, 40, 80, 84);
+        imgiconPj.setBounds(10, 70, 80, 84);
         mainPanel.add(imgiconPj);
 
+        imgClase = new JLabel();
+        imgClase.setBounds(100, 70,50,50);
+        mainPanel.add(imgClase);
+
         imagenS1 = new JLabel();
-        imagenS1.setBounds(10, 210, 82, 84);
+        imagenS1.setBounds(10, 260, 82, 84);
         mainPanel.add(imagenS1);
 
         imagenS2 = new JLabel();
-        imagenS2.setBounds(100, 210, 82, 84);
+        imagenS2.setBounds(100, 260, 82, 84);
         mainPanel.add(imagenS2);
 
         imagenS3 = new JLabel();
-        imagenS3.setBounds(190, 210, 82, 84);
+        imagenS3.setBounds(190, 260, 82, 84);
         mainPanel.add(imagenS3);
 
         imgMolagora = new JLabel();
-        imgMolagora.setBounds(10,300, 50, 50);
+        imgMolagora.setBounds(10,350, 50, 50);
         mainPanel.add(imgMolagora);
 
         imgMatMax = new JLabel();
-        imgMatMax.setBounds(190,300, 50, 50); // Asegúrate de que las coordenadas y el tamaño sean correctos
+        imgMatMax.setBounds(190,350, 50, 50); // Asegúrate de que las coordenadas y el tamaño sean correctos
         mainPanel.add(imgMatMax);
 
         imgMatSkill = new JLabel();
-        imgMatSkill.setBounds(100, 300, 50, 50);
+        imgMatSkill.setBounds(100, 350, 50, 50);
         mainPanel.add(imgMatSkill);
 
         imgOro = new JLabel();
-        imgOro.setBounds(280,300, 50, 50);
+        imgOro.setBounds(280,350, 50, 50);
         mainPanel.add(imgOro);
         String oroImagePath = "/img/token_gold.png";
         setImageLabel(imgOro, oroImagePath, 50, 50);
 
         PlaceholderimglvS3 = new JLabel();
-        PlaceholderimglvS3.setBounds(237,190, 50, 50);
+        PlaceholderimglvS3.setBounds(237,240, 50, 50);
         mainPanel.add(PlaceholderimglvS3);
 
         imglvS3 = new JLabel();
-        imglvS3.setBounds(250,190, 50, 50);
+        imglvS3.setBounds(250,240, 50, 50);
         mainPanel.add(imglvS3);
 
         PlusS3 = new JLabel();
-        PlusS3.setBounds(241,190, 50, 50);
+        PlusS3.setBounds(241,240, 50, 50);
         mainPanel.add(PlusS3);
 
         PlaceholderimglvS2 = new JLabel();
-        PlaceholderimglvS2.setBounds(151,190, 50, 50);
+        PlaceholderimglvS2.setBounds(151,240, 50, 50);
         mainPanel.add(PlaceholderimglvS2);
 
         imglvS2 = new JLabel();
-        imglvS2.setBounds(164,190, 50, 50);
+        imglvS2.setBounds(164,240, 50, 50);
         mainPanel.add(imglvS2);
 
         PlusS2 = new JLabel();
-        PlusS2.setBounds(155,190, 50, 50);
+        PlusS2.setBounds(155,240, 50, 50);
         mainPanel.add(PlusS2);
 
         PlaceholderimglvS1 = new JLabel();
-        PlaceholderimglvS1.setBounds(61,190, 50, 50);
+        PlaceholderimglvS1.setBounds(61,240, 50, 50);
         mainPanel.add(PlaceholderimglvS1);
 
         imglvS1 = new JLabel();
-        imglvS1.setBounds(74,190, 50, 50);
+        imglvS1.setBounds(74,240, 50, 50);
         mainPanel.add(imglvS1);
 
         PlusS1 = new JLabel();
-        PlusS1.setBounds(65,190, 50, 50);
+        PlusS1.setBounds(65,240, 50, 50);
         mainPanel.add(PlusS1);
 
         // Inicializa las etiquetas para mostrar los costes con valores iniciales
@@ -163,39 +168,39 @@ public class MaterialCalculator extends JFrame {
         labelNombrePersonaje.setFont(new Font(font.getName(), Font.BOLD, 16));
 
         labelCosteMolagora = new JLabel("0");
-        labelCosteMolagora.setBounds(10, 340, 64, 30);
+        labelCosteMolagora.setBounds(10, 390, 64, 30);
         mainPanel.add(labelCosteMolagora);
         Font fontMolagora = labelCosteMolagora.getFont();
         labelCosteMolagora.setFont(new Font(fontMolagora.getName(), Font.BOLD, 16));
 
         labelCosteMaterialSkill = new JLabel("0");
-        labelCosteMaterialSkill.setBounds(100, 340, 64, 30);
+        labelCosteMaterialSkill.setBounds(100, 390, 64, 30);
         mainPanel.add(labelCosteMaterialSkill);
         Font fontMatSkill = labelCosteMaterialSkill.getFont();
         labelCosteMaterialSkill.setFont(new Font(fontMatSkill.getName(), Font.BOLD, 16));
 
         labelCosteMaterialMax = new JLabel("0");
-        labelCosteMaterialMax.setBounds(190, 340, 64, 30);
+        labelCosteMaterialMax.setBounds(190, 390, 64, 30);
         mainPanel.add(labelCosteMaterialMax);
         Font fontMatMax = labelCosteMaterialMax.getFont();
         labelCosteMaterialMax.setFont(new Font(fontMatMax.getName(), Font.BOLD, 16));
 
         labelCosteOro = new JLabel("0");
-        labelCosteOro.setBounds(280, 340, 100, 30);
+        labelCosteOro.setBounds(280, 390, 100, 30);
         mainPanel.add(labelCosteOro);
         Font fontOro = labelCosteOro.getFont();
         labelCosteOro.setFont(new Font(fontOro.getName(), Font.BOLD, 16));
 
         s1LevelSelector = new JComboBox<>();
-        s1LevelSelector.setBounds(10, 160, 80, 25);
+        s1LevelSelector.setBounds(10, 210, 80, 25);
         mainPanel.add(s1LevelSelector);
 
         s2LevelSelector = new JComboBox<>();
-        s2LevelSelector.setBounds(100, 160, 80, 25);
+        s2LevelSelector.setBounds(100, 210, 80, 25);
         mainPanel.add(s2LevelSelector);
 
         s3LevelSelector = new JComboBox<>();
-        s3LevelSelector.setBounds(190, 160, 80, 25);
+        s3LevelSelector.setBounds(190, 210, 80, 25);
         mainPanel.add(s3LevelSelector);
 
         labelCosteOro.setVisible(false);
@@ -329,14 +334,21 @@ public class MaterialCalculator extends JFrame {
             imagenS2.setIcon(new ImageIcon(getClass().getResource(personaje.getImgS2())));
             imagenS3.setIcon(new ImageIcon(getClass().getResource(personaje.getImgS3())));
 
-
             String imgFacePath = personaje.getImgFace();
             if (imgFacePath != null && !imgFacePath.isEmpty()) {
-                setImageLabel(imgiconPj, imgFacePath, 82, 84); // Ajusta el tamaño según tus necesidades
+                setImageLabel(imgiconPj, imgFacePath, 82, 84);
             } else {
                 System.err.println("No se proporcionó una ruta de imagen válida para la cara del personaje.");
                 imgiconPj.setIcon(null);
             }
+
+            /*String imgClasePath = personaje.getImgClase();
+            if (imgClasePath != null && !imgClasePath.isEmpty()) {
+                setImageLabel(imgClase, imgClasePath, 82, 84);
+            } else {
+                System.err.println("No se proporcionó una ruta de imagen válida para la cara del personaje.");
+                imgClase.setIcon(null);
+            }*/
 
             // Obtén el nivel seleccionado de s3LevelSelector, asumiendo que los niveles están bien definidos
             Integer selectedLevel = (Integer) s3LevelSelector.getSelectedItem();
